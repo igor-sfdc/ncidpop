@@ -1,0 +1,10 @@
+Some possible Reverse Telephone Number Lookup URL's
+(all have pop-up/under ads):
+
+http://www.411.com/phone/$AREA-$NPA-$NXX
+http://www.yellowpages.com/reversephonelookup?phone=$AREA$NPA$NXX
+
+For international, you can use $ALL to pass the number on directly with no formatting.
+Here's an example for an Italian lookup URL:
+
+http://www.paginebianche.it/ricerca-da-numero?qs=$ALL

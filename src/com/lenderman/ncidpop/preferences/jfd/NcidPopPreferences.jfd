@@ -1,0 +1,1265 @@
+JFDML JFormDesigner: "5.1.2.0.134" Java: "1.8.0_121" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"title": "Preferences"
+			"resizable": false
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "setButton"
+				"text": "Set"
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 4
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 530
+				"y": 5
+				"width": 85
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "cancelButton"
+				"text": "Cancel"
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 4
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 530
+				"y": 35
+				"width": 85
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "defaultsButton"
+				"text": "Defaults"
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 4
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 530
+				"y": 65
+				"width": 85
+			} )
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "preferencesTabbedPane"
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+				"font": new com.jformdesigner.model.SwingFont( "defaultFont" )
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 4
+				}
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+					"autoSize": false
+				} ) {
+					name: "panel6"
+					"font": new com.jformdesigner.model.SwingFont( "defaultFont" )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+						"autoSize": false
+					} ) {
+						name: "panel9"
+						"border": new javax.swing.border.TitledBorder( "Server Settings" )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "serversTextField"
+							"font": &SwingFont0 new com.jformdesigner.model.SwingFont( "defaultFont" )
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 465
+							"height": 30
+							"x": 10
+							"y": 75
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label3"
+							"text": "(optional multi-server setting: separate entries with a comma)"
+							"font": &SwingFont1 new com.jformdesigner.model.SwingFont( "defaultFont" )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 460
+							"height": 14
+							"x": 10
+							"y": 55
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label2"
+							"text": "(optional port number setting: append a colon and port number)"
+							"font": #SwingFont1
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 460
+							"height": 14
+							"x": 10
+							"y": 40
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label1"
+							"text": "Hostname or Internet address of the ncidd Server:"
+							"font": #SwingFont1
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 460
+							"height": 16
+							"x": 10
+							"y": 25
+						} )
+						add( new FormComponent( "javax.swing.JCheckBox" ) {
+							name: "requestCallLogFromServerCheckBox"
+							"text": "Request log from server if not provided on server startup"
+							"font": #SwingFont1
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 445
+							"height": 20
+							"x": 10
+							"y": 110
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 485
+						"height": 150
+						"x": 5
+						"y": 10
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+						"autoSize": false
+					} ) {
+						name: "panel10"
+						"border": new javax.swing.border.TitledBorder( "Display Settings" )
+						add( new FormComponent( "javax.swing.JCheckBox" ) {
+							name: "displayUnformattedDateTimeCheckBox"
+							"text": "Display dates and times as received from server (unformatted)"
+							"font": #SwingFont1
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 445
+							"height": 20
+							"x": 10
+							"y": 20
+						} )
+						add( new FormComponent( "javax.swing.JCheckBox" ) {
+							name: "useEuropeanDateFormatCheckBox"
+							"text": "Process dates as European format (DD-MM-YYYY)"
+							"font": #SwingFont1
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 445
+							"height": 20
+							"x": 10
+							"y": 40
+						} )
+						add( new FormComponent( "javax.swing.JCheckBox" ) {
+							name: "useSystemAddressBookCheckBox"
+							"text": "Integrate with system address book for displaying aliases (if available)"
+							"font": #SwingFont1
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 445
+							"height": 20
+							"x": 10
+							"y": 60
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 485
+						"height": 95
+						"x": 5
+						"y": 165
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+						"autoSize": false
+					} ) {
+						name: "panel17"
+						"border": new javax.swing.border.TitledBorder( "Power Settings" )
+						add( new FormComponent( "javax.swing.JCheckBox" ) {
+							name: "notifyLowBatteryCheckBox"
+							"text": "Notify server(s) on low battery percentage"
+							"font": #SwingFont1
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 275
+							"height": 20
+							"x": 10
+							"y": 25
+						} )
+						add( new FormComponent( "javax.swing.JCheckBox" ) {
+							name: "notifyFullChargeCheckBox"
+							"text": "Notify server(s) when battery reaches full charge"
+							"font": #SwingFont1
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 445
+							"height": 20
+							"x": 10
+							"y": 55
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "notifyLowBatteryThresholdSpinner"
+							"font": #SwingFont0
+							"model": new javax.swing.SpinnerNumberModel( 0, 0, 100, 5 )
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 70
+							"height": 30
+							"x": 285
+							"y": 20
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 485
+						"height": 90
+						"x": 5
+						"y": 265
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "General"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+					"autoSize": false
+				} ) {
+					name: "panel1"
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"font": &SwingFont2 new com.jformdesigner.model.SwingFont( "defaultFont" )
+					add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+						name: "popupFieldsTabbedPane"
+						"font": new com.jformdesigner.model.SwingFont( "defaultFont" )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+							name: "panel14"
+							"font": new com.jformdesigner.model.SwingFont( "defaultFont" )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+								"autoSize": false
+							} ) {
+								name: "panel12"
+								"border": new javax.swing.border.TitledBorder( "Call Popup Settings" )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "dateCheckBox"
+									"text": "Date"
+									"font": &SwingFont3 new com.jformdesigner.model.SwingFont( "defaultFont" )
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 65
+									"height": 20
+									"x": 10
+									"y": 45
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "typeCheckBox"
+									"text": "Type"
+									"font": #SwingFont3
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 65
+									"height": 20
+									"x": 10
+									"y": 25
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "nameCheckBox"
+									"text": "Name"
+									"font": #SwingFont3
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 65
+									"height": 20
+									"x": 90
+									"y": 25
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "timeCheckBox"
+									"text": "Time"
+									"font": #SwingFont3
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 65
+									"height": 20
+									"x": 90
+									"y": 45
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "lineCheckBox"
+									"text": "Line"
+									"font": #SwingFont3
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 65
+									"height": 20
+									"x": 170
+									"y": 45
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "numberCheckBox"
+									"text": "Number"
+									"font": #SwingFont3
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 75
+									"height": 20
+									"x": 170
+									"y": 25
+								} )
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+								"width": 475
+								"height": 80
+								"x": 5
+								"y": 60
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "testCallsPopupButton"
+								"text": "Test Popup"
+								auxiliary() {
+									"JavaCodeGenerator.variableModifiers": 4
+								}
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+								"width": 105
+								"height": 28
+								"x": 180
+								"y": 295
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+								"autoSize": false
+							} ) {
+								name: "panel16"
+								"border": new javax.swing.border.TitledBorder( "Calls and Notifications Popup Display Selection" )
+								"font": &SwingFont4 new com.jformdesigner.model.SwingFont( "defaultFont" )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "thirdPartyNotifyCheckBox"
+									"text": "Use a 3rd Party Notifier (such as growl or notify-send)"
+									"font": new com.jformdesigner.model.SwingFont( "defaultFont" )
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 455
+									"height": 20
+									"x": 10
+									"y": 25
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "thirdPartyCallNotifyTextField"
+									"font": &SwingFont5 new com.jformdesigner.model.SwingFont( "defaultFont" )
+									"enabled": false
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 450
+									"height": 30
+									"x": 10
+									"y": 45
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label10"
+									"text": "Variable substitution:"
+									"font": #SwingFont3
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 455
+									"height": 14
+									"x": 15
+									"y": 75
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label17"
+									"text": "$POPUP will display the calls/notification message."
+									"font": #SwingFont3
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 455
+									"height": 14
+									"x": 15
+									"y": 90
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label18"
+									"text": "$IMAGE will display the address book image."
+									"font": #SwingFont3
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 455
+									"height": 14
+									"x": 15
+									"y": 105
+								} )
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+								"width": 475
+								"height": 130
+								"x": 5
+								"y": 155
+							} )
+							add( new FormComponent( "javax.swing.JCheckBox" ) {
+								name: "displayIncomingCallPopupsCheckBox"
+								"text": "Display Incoming Call Popups"
+								"font": #SwingFont3
+								auxiliary() {
+									"JavaCodeGenerator.variableModifiers": 4
+								}
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+								"width": 480
+								"height": 20
+								"x": 10
+								"y": 5
+							} )
+							add( new FormComponent( "javax.swing.JCheckBox" ) {
+								name: "displayOutgoingAndStatusCallPopupsCheckBox"
+								"text": "Display Outgoing & Status Call Popups"
+								"font": #SwingFont3
+								auxiliary() {
+									"JavaCodeGenerator.variableModifiers": 4
+								}
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+								"width": 480
+								"height": 20
+								"x": 10
+								"y": 25
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "Calls/Notifications"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+							name: "panel15"
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+								"autoSize": false
+							} ) {
+								name: "panel4"
+								"border": new javax.swing.border.TitledBorder( "Message Popup Display Selection" )
+								"font": #SwingFont4
+								add( new FormComponent( "javax.swing.JRadioButton" ) {
+									name: "messageNotifyDialogRadioButton"
+									"text": "Dialog"
+									"selected": true
+									"$buttonGroup": new FormReference( "messageNotifySelectionButtonGroup" )
+									"font": &SwingFont6 new com.jformdesigner.model.SwingFont( "defaultFont" )
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"x": 15
+									"y": 20
+									"width": 70
+									"height": 18
+								} )
+								add( new FormComponent( "javax.swing.JRadioButton" ) {
+									name: "messageNotifySystemTrayRadioButton"
+									"text": "System Tray"
+									"$buttonGroup": new FormReference( "messageNotifySelectionButtonGroup" )
+									"font": &SwingFont7 new com.jformdesigner.model.SwingFont( "defaultFont" )
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 100
+									"height": 18
+									"x": 15
+									"y": 40
+								} )
+								add( new FormComponent( "javax.swing.JRadioButton" ) {
+									name: "messageNotifyThirdPartyRadioButton"
+									"text": "3rd Party Notifier (such as growl or notify-send)"
+									"$buttonGroup": new FormReference( "messageNotifySelectionButtonGroup" )
+									"font": new com.jformdesigner.model.SwingFont( "defaultFont" )
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 345
+									"height": 18
+									"x": 15
+									"y": 60
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "thirdPartyMessageNotifyTextField"
+									"font": #SwingFont5
+									"enabled": false
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 450
+									"height": 30
+									"x": 10
+									"y": 80
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label16"
+									"text": "Variable substitution: "
+									"font": #SwingFont3
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 455
+									"height": 14
+									"x": 10
+									"y": 115
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label26"
+									"text": "$IMAGE will display the address book image."
+									"font": #SwingFont3
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 455
+									"height": 14
+									"x": 10
+									"y": 145
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label29"
+									"text": "$MESSAGE will display the message."
+									"font": #SwingFont3
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 455
+									"height": 14
+									"x": 10
+									"y": 130
+								} )
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+								"width": 475
+								"height": 170
+								"x": 5
+								"y": 130
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "testMessagesPopupButton"
+								"text": "Test Popup"
+								auxiliary() {
+									"JavaCodeGenerator.variableModifiers": 4
+								}
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+								"width": 105
+								"height": 28
+								"x": 180
+								"y": 300
+							} )
+							add( new FormComponent( "javax.swing.JCheckBox" ) {
+								name: "displayIncomingMessagePopupsCheckBox"
+								"text": "Display Incoming Message Popups"
+								"font": #SwingFont3
+								auxiliary() {
+									"JavaCodeGenerator.variableModifiers": 4
+								}
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+								"width": 235
+								"height": 20
+								"x": 10
+								"y": 5
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+								"autoSize": false
+							} ) {
+								name: "panel18"
+								"border": new javax.swing.border.TitledBorder( "Message Popup Settings" )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "messageDateCheckBox"
+									"text": "Date"
+									"font": #SwingFont3
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 65
+									"height": 20
+									"x": 235
+									"y": 50
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "messageTypeCheckBox"
+									"text": "Type"
+									"font": #SwingFont3
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 65
+									"height": 20
+									"x": 130
+									"y": 50
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "messageFromToCheckBox"
+									"text": "From/To"
+									"font": #SwingFont3
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 85
+									"height": 20
+									"x": 235
+									"y": 70
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "messageTimeCheckBox"
+									"text": "Time"
+									"font": #SwingFont3
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 65
+									"height": 20
+									"x": 340
+									"y": 50
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "messageTextCheckBox"
+									"text": "Text"
+									"font": #SwingFont3
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 65
+									"height": 20
+									"x": 340
+									"y": 70
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "messageDeviceCheckBox"
+									"text": "Device"
+									"font": #SwingFont3
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 75
+									"height": 20
+									"x": 130
+									"y": 70
+								} )
+								add( new FormComponent( "javax.swing.JRadioButton" ) {
+									name: "messageFormatPrettyPrintRadioButton"
+									"text": "Pretty Print"
+									"selected": true
+									"$buttonGroup": new FormReference( "messageFormatButtonGroup" )
+									"font": #SwingFont6
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 115
+									"x": 10
+									"y": 25
+									"height": 18
+								} )
+								add( new FormComponent( "javax.swing.JRadioButton" ) {
+									name: "messageFormatCustomRadioButton"
+									"text": "Custom"
+									"$buttonGroup": new FormReference( "messageFormatButtonGroup" )
+									"font": #SwingFont7
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+									"width": 100
+									"x": 130
+									"y": 25
+									"height": 18
+								} )
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+								"width": 475
+								"height": 100
+								"x": 5
+								"y": 30
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "Messages/Notifications"
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 500
+						"height": 370
+						"x": 5
+						"y": 0
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Popup Fields"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+					"autoSize": false
+				} ) {
+					name: "panel11"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+						"autoSize": false
+					} ) {
+						name: "panel13"
+						"border": new javax.swing.border.TitledBorder( "Phone Number Settings" )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label19"
+							"text": "Phone Number Format:"
+							"font": #SwingFont1
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 244
+							"height": 14
+							"x": 10
+							"y": 25
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "phoneNumberFormatTextField"
+							"font": new com.jformdesigner.model.SwingFont( "defaultFont" )
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 465
+							"height": 30
+							"x": 10
+							"y": 45
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label20"
+							"text": "Internet reverse-lookup URL:"
+							"font": #SwingFont1
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 244
+							"height": 14
+							"x": 10
+							"y": 75
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "reverseLookupTextField"
+							"font": &SwingFont8 new com.jformdesigner.model.SwingFont( "defaultFont" )
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 465
+							"height": 30
+							"x": 10
+							"y": 95
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label21"
+							"text": "Variable substitution (Phone Number Format and reverse-lookup URL):"
+							"font": #SwingFont1
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 465
+							"height": 14
+							"x": 10
+							"y": 125
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label22"
+							"text": "2) $PRE, $AREA, $NPA, $NXX (for phone numbers 10 digits and above):"
+							"font": #SwingFont1
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 465
+							"height": 14
+							"x": 10
+							"y": 165
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label23"
+							"text": "If the phone number is 1800-555-1212, $PRE will be 1 (the \"prefix\"),"
+							"font": #SwingFont1
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 450
+							"height": 14
+							"x": 25
+							"y": 195
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label24"
+							"text": "$AREA will be 800, $NPA will be 555 and $NXX will be 1212."
+							"font": #SwingFont1
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 450
+							"height": 14
+							"x": 25
+							"y": 210
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label25"
+							"text": "1) $ALL: Use phone number with no formatting."
+							"font": #SwingFont1
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 465
+							"height": 14
+							"x": 10
+							"y": 145
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label27"
+							"text": "Apply North American Numbering Plan format to phone number."
+							"font": #SwingFont1
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 450
+							"height": 14
+							"x": 25
+							"y": 180
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label28"
+							"text": "NOTE: Only one of the two above options is valid (options cannot be combined)."
+							"font": #SwingFont1
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 465
+							"height": 14
+							"x": 10
+							"y": 240
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 485
+						"height": 275
+						"x": 5
+						"y": 10
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Phone Number Options"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+					"autoSize": false
+				} ) {
+					name: "panel3"
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"font": #SwingFont2
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "enableSmartPhoneTextNotifyCheckBox"
+						"text": "Display text notifications from smart phones"
+						"font": #SwingFont1
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 435
+						"height": 20
+						"x": 10
+						"y": 10
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+						"autoSize": false
+					} ) {
+						name: "panel8"
+						"border": new javax.swing.border.TitledBorder( "Send Text Message Options" )
+						add( new FormComponent( "javax.swing.JCheckBox" ) {
+							name: "textMessageUrlCheckBox"
+							"text": "Use Internet Text Message URL"
+							"font": #SwingFont1
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 244
+							"height": 14
+							"x": 15
+							"y": 30
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label12"
+							"text": "Variable substitution: $NUMBER is the smart phone number."
+							"font": #SwingFont1
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 450
+							"height": 14
+							"x": 15
+							"y": 80
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textMessageUrlTextField"
+							"font": #SwingFont8
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 455
+							"height": 30
+							"x": 15
+							"y": 50
+						} )
+						add( new FormComponent( "javax.swing.JCheckBox" ) {
+							name: "textMessageExternalProgramCheckBox"
+							"text": "Use External Program (i.e. a perl script that uses Google Voice)"
+							"font": #SwingFont1
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 450
+							"height": 14
+							"x": 15
+							"y": 115
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textMessageExternalProgramTextField"
+							"font": #SwingFont8
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 455
+							"height": 30
+							"x": 15
+							"y": 160
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label13"
+							"text": "Variable substitution: $NUMBER is the smart phone number. A separate"
+							"font": #SwingFont1
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 450
+							"height": 14
+							"x": 15
+							"y": 210
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label15"
+							"text": "form will pop up and prompt you for a $MESSAGE."
+							"font": #SwingFont1
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 450
+							"height": 14
+							"x": 15
+							"y": 225
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "exampleProgramsLabel"
+							"text": "<html><a href>Click Here for Example Programs</a></html>"
+							"font": #SwingFont1
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 450
+							"height": 14
+							"x": 15
+							"y": 190
+						} )
+						add( new FormComponent( "javax.swing.JCheckBox" ) {
+							name: "displayOutputFromExternalProgramCheckBox"
+							"text": "Display Output Results from External Program"
+							"font": #SwingFont1
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 450
+							"height": 14
+							"x": 15
+							"y": 140
+						} )
+						add( new FormComponent( "javax.swing.JCheckBox" ) {
+							name: "textMessageGatewayRelayDeviceCheckBox"
+							"text": "Send text message using a gateway relay device (i.e. NCID Android)"
+							"font": #SwingFont1
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 460
+							"height": 14
+							"x": 15
+							"y": 260
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textMessageGatewayRelayDeviceName"
+							"font": #SwingFont8
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 455
+							"height": 30
+							"x": 15
+							"y": 305
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label4"
+							"text": "Gateway Device Name (or specify @all for all gateways):"
+							"font": new com.jformdesigner.model.SwingFont( "defaultFont" )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 20
+							"y": 285
+							"height": 20
+							"width": 450
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 485
+						"height": 350
+						"x": 5
+						"y": 60
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "enableExtraLogFieldsCheckBox"
+						"text": "Display extra fields on message log"
+						"font": #SwingFont1
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 435
+						"height": 20
+						"x": 10
+						"y": 30
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Text Options"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+					"autoSize": false
+				} ) {
+					name: "panel2"
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"font": new com.jformdesigner.model.SwingFont( "defaultFont" )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+						"autoSize": false
+					} ) {
+						name: "panel5"
+						"border": new javax.swing.border.TitledBorder( "Text To Speech Reader" )
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "nameReadingNoneRadioButton"
+							"text": "None"
+							"$buttonGroup": new FormReference( "nameReadingButtonGroup" )
+							"font": new com.jformdesigner.model.SwingFont( "defaultFont" )
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 320
+							"height": 18
+							"x": 10
+							"y": 20
+						} )
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "nameReadingDefaultRadioButton"
+							"text": "System Default"
+							"$buttonGroup": new FormReference( "nameReadingButtonGroup" )
+							"selected": true
+							"font": new com.jformdesigner.model.SwingFont( "defaultFont" )
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 320
+							"height": 18
+							"x": 10
+							"y": 45
+						} )
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "nameReadingThirdPartyRadioButton"
+							"text": "3rd Party"
+							"$buttonGroup": new FormReference( "nameReadingButtonGroup" )
+							"font": new com.jformdesigner.model.SwingFont( "defaultFont" )
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 85
+							"height": 18
+							"x": 10
+							"y": 70
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "thirdPartyNameReadTextField"
+							"font": #SwingFont8
+							"enabled": false
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 375
+							"height": 30
+							"x": 95
+							"y": 65
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "testSoundButton"
+							"text": "Test"
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 105
+							"height": 28
+							"x": 195
+							"y": 120
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label11"
+							"text": "Variable substitution: $NAME will read the name."
+							"font": #SwingFont1
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 365
+							"height": 14
+							"x": 90
+							"y": 100
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 485
+						"height": 160
+						"x": 5
+						"y": 180
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+						"autoSize": false
+					} ) {
+						name: "panel7"
+						"border": new javax.swing.border.TitledBorder( "Ringtone Options" )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label9"
+							"text": "Audio Mixer"
+							"font": &SwingFont9 new com.jformdesigner.model.SwingFont( "defaultFont" )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 150
+							"x": 20
+							"y": 20
+							"height": 16
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "audioMixerComboBox"
+							"font": &SwingFont10 new com.jformdesigner.model.SwingFont( "defaultFont" )
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 460
+							"height": 25
+							"x": 15
+							"y": 35
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "ringtoneComboBox"
+							"font": #SwingFont10
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 290
+							"height": 25
+							"x": 15
+							"y": 80
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "playButton"
+							"text": "Play"
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 65
+							"x": 310
+							"y": 80
+							"height": 28
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "browseButton"
+							"text": "Browse..."
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 90
+							"x": 380
+							"y": 80
+							"height": 28
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label14"
+							"text": "Ringtone"
+							"font": #SwingFont9
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"width": 150
+							"x": 20
+							"y": 65
+							"height": 16
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 485
+						"height": 120
+						"x": 5
+						"y": 10
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "readIncomingCallerNamesCheckBox"
+						"text": "Read Incoming Caller Names"
+						"font": #SwingFont1
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 270
+						"height": 20
+						"x": 10
+						"y": 135
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "readIncomingMessagesCheckBox"
+						"text": "Read Incoming Messages"
+						"font": #SwingFont1
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 225
+						"height": 20
+						"x": 280
+						"y": 135
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "readOutgoingAndStatusCallerNamesCheckBox"
+						"text": "Read Outgoing & Status Caller Names"
+						"font": #SwingFont1
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 495
+						"height": 20
+						"x": 10
+						"y": 155
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Audio Options"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 515
+				"height": 445
+				"x": 10
+				"y": 10
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 25 )
+			"size": new java.awt.Dimension( 635, 500 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "nameReadingButtonGroup"
+			auxiliary() {
+				"JavaCodeGenerator.variableLocal": false
+				"JavaCodeGenerator.variableModifiers": 4
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 645, 365 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "messageNotifySelectionButtonGroup"
+			auxiliary() {
+				"JavaCodeGenerator.variableLocal": false
+				"JavaCodeGenerator.variableModifiers": 4
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 645, 315 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "messageFormatButtonGroup"
+			auxiliary() {
+				"JavaCodeGenerator.variableModifiers": 4
+				"JavaCodeGenerator.variableLocal": false
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 645, 265 )
+		} )
+	}
+}

@@ -1,0 +1,141 @@
+JFDML JFormDesigner: "5.1.2.0.134" Java: "1.8.0_91" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"font": new com.jformdesigner.model.SwingFont( "defaultFont" )
+			"resizable": false
+			"$sizePolicy": 1
+			"title": "Gateway Relay Options"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "closeButton"
+				"text": "Close"
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 4
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 160
+				"y": 230
+				"width": 80
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel1"
+				"border": new javax.swing.border.TitledBorder( "Gateway Device Status" )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "batteryButton"
+					"text": "Battery Level"
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 4
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 15
+					"y": 25
+					"width": 135
+					"height": 28
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "locationButton"
+					"text": "Current Location"
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 4
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 15
+					"y": 60
+					"width": 135
+					"height": 28
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "ringtoneButton"
+					"text": "Play Ringtone"
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 4
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 135
+					"height": 28
+					"x": 15
+					"y": 95
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 80
+				"height": 135
+				"width": 170
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel2"
+				"border": new javax.swing.border.TitledBorder( "Gateway Remote Dialer" )
+				add( new FormComponent( "com.lenderman.ncidpop.utils.gui.jsuggest.JSuggestField" ) {
+					name: "numberTextField"
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 4
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 55
+					"width": 195
+					"height": 30
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "callButton"
+					"text": "Call"
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 4
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 65
+					"y": 95
+					"width": 85
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label19"
+					"text": "Number to Dial"
+					"font": new com.jformdesigner.model.SwingFont( "defaultFont" )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 145
+					"height": 14
+					"x": 15
+					"y": 35
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 215
+				"height": 135
+				"x": 190
+				"y": 80
+			} )
+			add( new FormComponent( "com.lenderman.ncidpop.utils.gui.jsuggest.JSuggestField" ) {
+				name: "gatewayDeviceNameTextField"
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 4
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 195
+				"height": 30
+				"x": 10
+				"y": 35
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label20"
+				"text": "Gateway Device Name (specify \"@all\" for all gateway devices)"
+				"font": new com.jformdesigner.model.SwingFont( "defaultFont" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 405
+				"height": 20
+				"x": 15
+				"y": 10
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 435, 305 )
+		} )
+	}
+}

@@ -1,0 +1,7 @@
+Source: NCIDpop-Sources-0.10.10.0.zip
+Macintosh OS X package: NCIDpop-MacOSX-0.10.10.dmg
+Macintosh-Compat OS X package: NCIDpop-MacOSX-Compat-0.10.10.dmg
+Windows package: NCIDpop-Win32-0.10.10.exe
+Linux package: NCIDpop-0.10.10.tar.gz
+
+See CHANGES.txt for capabilities added in this version of NCIDpop.

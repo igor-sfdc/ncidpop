@@ -1,0 +1,21 @@
+Universal Installation (Including Linux)
+
+Download NCIDpop-0.10.10.tar.gz to your hard drive. Untar the file. 
+To launch NCIDpop, issue the command 'java -jar NCIDpop.jar'
+Either the NCIDpop system tray icon will appear (Windows and Mac) 
+or the NCIDpop form will be displayed (Linux and all other OSes). 
+You can quit NCIDpop by choosing File | Exit from the main menu.
+
+To change the NCID server host, choose "Preferences..." from
+the context menu.
+
+Running a NCID Server
+
+Before you can use NCIDpop, you will need to be running a Network
+Caller ID server. NCIDpop is designed for use with ncidd. When NCIDpop
+first starts, you will need to enter the hostname or IP address of the
+server running ncidd.
+
+If you are running ncidd on a non-default port (i.e., not 3333),
+enter the server name followed by a colon and the port number, e.g.,
+callerid.domain.name:1234.

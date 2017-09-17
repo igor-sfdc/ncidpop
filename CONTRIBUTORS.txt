@@ -1,0 +1,51 @@
+Alexei Kosut:
+    Designed and wrote most of the programs.
+
+Lyman Epp:
+    Wrote the new features for the Windows version of NCIDpop
+    contained in Versions 0.9.6 through 0.9.13. Finished the
+    Windows installer.
+
+Mark Salyzyn:
+    Updated the Macintosh code, in version 0.9.10, so it would
+    compile with the common files used by the Windows version.
+
+Joe Nardone:
+    Submitted patch for non-standard window managers.
+
+Rich West:
+    Created the Windows installer.
+
+Nicholas Riley:
+    Fixed up NCIDpop for Mac OS X so it compiles with Xcode 3.x and on
+    Intel.  (The project files in the current ncidpop release are too old
+    to even be imported by current versions of Xcode, and an API being used
+    was deprecated and not endian-safe.  Added some of the other Windows
+    features (history and reverse lookup).  Also cleaned up the popup display
+    as it was hard to read in a hurry when someone was calling.  Added new
+    features in NCIDpop 0.9.16 and later.
+
+Chris Lenderman:
+    Fixed problems and added features in the Windows version of NCIDpop
+    0.9.16 and 0.9.17.
+
+Chris Lenderman:
+    Authored 0.10.0 as a complete Java re-write maintaining the look and 
+    feel of the legacy NCIDpop.
+    Created 0.10.1 to support client jobs (whitelist/blacklist/aliases).
+    Created 0.10.2 to add text-to-speech and texting capabilities to all 
+    versions.
+    Created 0.10.3.
+    Created 0.10.4.
+    Created 0.10.5.
+    Created 0.10.6.
+    Created 0.10.7.
+    Created 0.10.8.
+    Created 0.10.9.
+    Created 0.10.10.
+
+Todd Andrews:
+    Participated heavily in the design process which engendered innovative
+    new features for NCIDpop.  Provided extensive testing support for 0.10.0 
+    on Windows, Linux, and Macintosh platforms and provided improved artwork 
+    for the icons.

@@ -1,0 +1,52 @@
+JFDML JFormDesigner: "5.1.2.0.134" Java: "1.7.0_45" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+			"$columnSpecs": "8dlu, max(min;100dlu):grow, 8dlu"
+			"$rowSpecs": "fill:6dlu, linegap, default:grow, 8dlu, default, linegap, 2dlu"
+		} ) {
+			name: "this"
+			"alwaysOnTop": true
+			"$sizePolicy": 0
+			"$locationPolicy": 1
+			"resizable": false
+			"title": "Message"
+			"modal": true
+			add( new FormComponent( "javax.swing.JTextArea" ) {
+				name: "infoLabel"
+				"text": "Message"
+				"editable": false
+				"focusable": false
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+				"background": new java.awt.Color( 214, 217, 223, 0 )
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 1
+				}
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 2
+				"gridY": 3
+				"hAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+				"$columnSpecs": "center:default:grow"
+				"$rowSpecs": "fill:default"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "buttonOk"
+					"text": "Ok"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonOkActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 2
+				"gridY": 5
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 220, 145 )
+		} )
+	}
+}

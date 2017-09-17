@@ -1,0 +1,11 @@
+{  
+   "hupmode-2":"Generate Fax Tone and Terminate Blacklisted Call",
+   "hupmode-1":"Terminate Blacklisted Call",
+   "regex":"Use Regular Expressions for Server List Matching",
+   "hupmode-3":"Play Announcement and Terminate Blacklisted Call",
+   "ignore1":"Server Ignores Leading 1 for Calls/Aliases",
+   "hangup-2":"Generate Fax Tone and Terminate Blacklisted Call",
+   "hangup-3":"Play Announcement and Terminate Blacklisted Call",
+   "hangup":"Terminate Blacklisted Call",
+   "hangup-1":"Terminate Blacklisted Call"
+}

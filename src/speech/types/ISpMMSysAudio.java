@@ -1,0 +1,50 @@
+package speech.types;
+
+import com4j.Holder;
+import com4j.IID;
+import com4j.VTID;
+
+/**
+ * ISpMMSysAudio Interface
+ */
+@IID("{15806F6E-1D70-4B48-98E6-3B1A007509AB}")
+public interface ISpMMSysAudio extends speech.types.ISpAudio
+{
+    // Methods:
+    /**
+     * @return Returns a value of type int
+     */
+
+    @VTID(26)
+    int getDeviceId();
+
+    /**
+     * @param uDeviceId Mandatory int parameter.
+     */
+
+    @VTID(27)
+    void setDeviceId(int uDeviceId);
+
+    /**
+     * @param pHandle Mandatory Holder<java.nio.Buffer> parameter.
+     */
+
+    @VTID(28)
+    void getMMHandle(Holder<java.nio.Buffer> pHandle);
+
+    /**
+     * @return Returns a value of type int
+     */
+
+    @VTID(29)
+    int getLineId();
+
+    /**
+     * @param uLineId Mandatory int parameter.
+     */
+
+    @VTID(30)
+    void setLineId(int uLineId);
+
+    // Properties:
+}
